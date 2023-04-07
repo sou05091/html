@@ -1,0 +1,13 @@
+.c1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.c1 > div {
+    width: 30%;
+}
+
+.c1 > p {
+    width: 60%;
+}
+
