@@ -1,16 +1,16 @@
 const cTof = (temp) => {
-    let temp = (t1.value * 9/5) + 32;
-    return temp;
+    let ftemp = (temp * 9/5) + 32;
+    return ftemp;
 }
 const fToc = (temp) => {
-    let temp = (t1.value - 32) * 5/9;
-    return temp;
+    let ctemp = (temp - 32) * 5/9;
+    return ctemp;
 }
 
-const selToggle = (s1, s2, t1, t2, d1, d2) => {
-    d1.textContent = event.target.value;
+const selToggle = (s1, s2, t1, t2,) => {
     t1.value = '';
     t2.value = '';
+
     if(s1.value == '℃'){
         s2.value = '℉';
     } else if(s1.value == '℉'){
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //select change
     sel1.addEventListener('change', (event) => {
-        selToggle = (sel1, sel2, t1, t2);
+        selToggle(sel1, sel2, t1, t2);
         d1.textContent = sel1.value;
         d2.textContent = sel2.value;
         // d1.textContent = event.target.value;
@@ -48,15 +48,18 @@ document.addEventListener("DOMContentLoaded", () => {
         // d2.textContent = sel2.value;
     });
     sel2.addEventListener('change', () => {
-        d2.textContent = event.target.value;
-        if(sel2.value == '℃'){
-            sel1.value = '℉';
-        } else if(sel2.value == '℉'){
-            sel1.value = '℃';
-        }
-
+        selToggle(sel2, sel1, t1, t2);
         d1.textContent = sel1.value;
         d2.textContent = sel2.value;
+        // d2.textContent = event.target.value;
+        // if(sel2.value == '℃'){
+        //     sel1.value = '℉';
+        // } else if(sel2.value == '℉'){
+        //     sel1.value = '℃';
+        // }
+
+        // d1.textContent = sel1.value;
+        // d2.textContent = sel2.value;
     });
 
     //change temp
