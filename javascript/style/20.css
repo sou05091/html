@@ -1,0 +1,13 @@
+.a1{
+    border: 2px solid black;
+    width: 220px;
+}
+img{
+    width: 100%;
+    height: 200px;
+}
+.col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
