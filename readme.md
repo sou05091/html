@@ -1,5 +1,6 @@
 # K-digital 3기 FrontEnd 수업
 ![Alt text](/image/me.jpg)
++ 23.04.11~18 : Javascript (온도계산, 주사위게임, 과일배열, 폭탄게임) 사용
 + 23.04.10 : Javascript 사용
 + 23.04.09 : Bootstrap 사용
 + 23.04.07 : Pico CSS 사용
